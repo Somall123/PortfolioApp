@@ -1,0 +1,35 @@
+.header1
+{
+    padding: 2rem 1rem;  
+    background-color: #631ce7; 
+    color: white;
+}
+.header1 {
+    padding: 2rem 0;
+    background-color: #005dbb;
+    border-bottom: 1px solid #dee2e6;
+    
+    .text-center {
+      h1 {
+        font-size: 3rem;
+        color: #f5f5f5;
+        margin-bottom: 0.5rem;
+      }
+  
+      h3 {
+        font-size: 1.25rem;
+        color: #abcfee;
+      }
+    }
+  
+    .social-icons {
+      .social-icon {
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+  

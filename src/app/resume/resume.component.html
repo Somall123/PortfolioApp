@@ -1,0 +1,380 @@
+<div class="container text-center">
+    <button class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Download PDF Resume</button>
+   
+    <div class="pb-2">
+
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpened">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">
+                        Work Experience
+                    </div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpened" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpened" style="color: white;">v</div>
+
+                    </div>
+                </button>
+                <header>
+                    <h1>David Eliashvili's Working Experience in Computer Science</h1>
+                </header>
+                <main>
+                    <section id="introduction">
+                        <h2>Introduction</h2>
+                        <p>David Eliashvili has had a distinguished career in computer science, making significant contributions to the industry through his work in software development, research, and project management.</p>
+                    </section>
+                    
+                    <section id="experience">
+                        <h2>Professional Experience</h2>
+                        <ul>
+                            <li>
+                                <h3>XYZ Tech Company</h3>
+                                <p><strong>Software Engineer</strong> (2022 - Present)</p>
+                                <ul>
+                                    <li>Developed innovative solutions in AI and machine learning.</li>
+                                    <li>Worked on building scalable web applications for large-scale clients.</li>
+                                    <li>Collaborated with cross-functional teams to design and implement new features.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>ABC Innovations</h3>
+                                <p><strong>Junior Developer</strong> (2020 - 2022)</p>
+                                <ul>
+                                    <li>Assisted in developing mobile applications using various programming languages.</li>
+                                    <li>Contributed to the company's open-source projects and initiatives.</li>
+                                    <li>Participated in code reviews and team meetings to enhance the software development process.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section id="projects">
+                        <h2>Projects</h2>
+                        <ul>
+                            <li><strong>Project Alpha:</strong> Led a team to develop a cloud-based application, resulting in a 20% increase in user engagement.</li>
+                            <li><strong>Project Beta:</strong> Implemented a machine learning algorithm that improved prediction accuracy by 30%.</li>
+                            <li><strong>Project Gamma:</strong> Collaborated with a multinational team to create a successful e-commerce platform.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="achievements">
+                        <h2>Awards & Recognitions</h2>
+                        <ul>
+                            <li><strong>Innovation Award:</strong> Recognized for outstanding contributions to AI research.</li>
+                            <li><strong>Team Excellence Award:</strong> Acknowledged for leading a team to a successful product launch.</li>
+                            <li><strong>Patent Holder:</strong> Holds a patent for a novel machine learning algorithm.</li>
+                        </ul>
+                    </section>
+                </main>
+                <footer>
+                    <p>&copy; 2024 David Eliashvili</p>
+                </footer>
+            
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="IsUniversityOpened">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">
+                        University
+                    </div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!IsUniversityOpened" style="color: white;">></div>
+                        <div *ngIf="IsUniversityOpened" style="color: white;">v</div>
+
+                    </div>
+                </button>
+    
+                <header>
+                    <h1>David Eliashvili's University History in Computer Science</h1>
+                </header>
+                <main>
+                    <section id="introduction">
+                        <h2>Introduction</h2>
+                        <p>David Eliashvili is a renowned expert in computer science, known for his academic contributions and research in the field. He built his university learning journey in computer science over the years.</p>
+                    </section>
+                    
+                    <section id="timeline">
+                        <h2>Timeline</h2>
+                        <ul>
+                            <li><strong>2015:</strong> Enrolled in the Computer Science program at XYZ University.</li>
+                            <li><strong>2018:</strong> Completed his bachelor's degree with honors.</li>
+                            <li><strong>2019:</strong> Started his master's degree in Computer Science.</li>
+                            <li><strong>2021:</strong> Graduated with a master's degree.</li>
+                            <li><strong>2022:</strong> Published his first research paper on artificial intelligence.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <p>During his time at university, David Eliashvili excelled in his studies, achieving top grades and gaining recognition for his innovative research projects. His work in artificial intelligence and machine learning has been widely acknowledged.</p>
+                    </section>
+                    
+                    <section id="projects">
+                        <h2>Projects & Achievements</h2>
+                        <ul>
+                            <li><strong>AI Research:</strong> Conducted research on natural language processing and published several papers.</li>
+                            <li><strong>Capstone Project:</strong> Developed a cutting-edge machine learning model for image recognition.</li>
+                            <li><strong>Academic Awards:</strong> Received the Dean's Award for Outstanding Academic Performance.</li>
+                        </ul>
+                    </section>
+                </main>
+                <footer>
+                    <p>&copy; 2024 David Eliashvili</p>
+                </footer>+
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpened">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">
+                        Skills
+                    </div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpened" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpened" style="color: white;">v</div>
+
+                    </div>
+                </button>
+                <header>
+                    <h1>David Eliashvili's Skills in Computer Science</h1>
+                </header>
+                <main>
+                    <section id="programming-languages">
+                        <h2>Programming Languages</h2>
+                        <ul>
+                            <li><strong>Python:</strong> Experienced in writing clean, efficient, and scalable code.</li>
+                            <li><strong>JavaScript:</strong> Proficient in building interactive web applications.</li>
+                            <li><strong>Java:</strong> Strong knowledge of Java for developing robust software.</li>
+                            <li><strong>C++:</strong> Skilled in using C++ for performance-critical applications.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="tools-technologies">
+                        <h2>Tools & Technologies</h2>
+                        <ul>
+                            <li><strong>Version Control:</strong> Expert in Git for source code management.</li>
+                            <li><strong>Databases:</strong> Proficient in SQL and NoSQL databases like MySQL and MongoDB.</li>
+                            <li><strong>Cloud Platforms:</strong> Familiar with AWS and Google Cloud for deploying applications.</li>
+                            <li><strong>Frameworks:</strong> Experience with Django, React, and Angular for web development.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="methodologies">
+                        <h2>Methodologies</h2>
+                        <ul>
+                            <li><strong>Agile Development:</strong> Skilled in working within Agile frameworks such as Scrum and Kanban.</li>
+                            <li><strong>Test-Driven Development (TDD):</strong> Proficient in writing tests and ensuring code quality.</li>
+                            <li><strong>DevOps:</strong> Experience in CI/CD practices for efficient software delivery.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="soft-skills">
+                        <h2>Soft Skills</h2>
+                        <ul>
+                            <li><strong>Problem-Solving:</strong> Strong analytical skills for tackling complex challenges.</li>
+                            <li><strong>Communication:</strong> Effective communicator for technical and non-technical audiences.</li>
+                            <li><strong>Teamwork:</strong> Collaborative and supportive team member in cross-functional teams.</li>
+                            <li><strong>Leadership:</strong> Demonstrated leadership in guiding projects and mentoring junior engineers.</li>
+                        </ul>
+                    </section>
+                </main>
+                <footer>
+                    <p>&copy; 2024 David Eliashvili</p>
+                </footer>
+    
+            </accordion-group>
+            <accordion-group [(isOpen)]="isRequirOpened">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">
+                        Requirements
+                    </div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isRequirOpened" style="color: white;">></div>
+                        <div *ngIf="isRequirOpened" style="color: white;">v</div>
+
+                    </div>
+                </button>
+                <header>
+                    <h1>Requirements for Working in Computer Science</h1>
+                </header>
+                <main>
+                    <section id="educational-qualifications">
+                        <h2>Educational Qualifications</h2>
+                        <ul>
+                            <li><strong>Bachelor's Degree:</strong> Typically required in Computer Science, Software Engineering, or a related field.</li>
+                            <li><strong>Master's Degree:</strong> Preferred for specialized roles or advanced positions.</li>
+                            <li><strong>Certifications:</strong> Industry certifications in specific technologies (e.g., AWS, Microsoft, Cisco) are beneficial.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="technical-skills">
+                        <h2>Technical Skills</h2>
+                        <ul>
+                            <li><strong>Programming Languages:</strong> Proficiency in languages such as Python, Java, JavaScript, C++, or similar.</li>
+                            <li><strong>Development Frameworks:</strong> Familiarity with frameworks such as React, Angular, Django, or similar.</li>
+                            <li><strong>Tools and Technologies:</strong> Experience with version control (e.g., Git), databases (e.g., MySQL, MongoDB), and cloud platforms (e.g., AWS, Google Cloud).</li>
+                            <li><strong>Software Engineering Principles:</strong> Understanding of software design patterns, data structures, and algorithms.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="soft-skills">
+                        <h2>Soft Skills</h2>
+                        <ul>
+                            <li><strong>Problem-Solving:</strong> Strong analytical skills for troubleshooting and debugging.</li>
+                            <li><strong>Communication:</strong> Ability to convey technical information clearly to both technical and non-technical audiences.</li>
+                            <li><strong>Teamwork:</strong> Willingness to collaborate with colleagues from various departments.</li>
+                            <li><strong>Time Management:</strong> Efficient in prioritizing tasks and meeting deadlines.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="experience">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li><strong>Entry-Level Positions:</strong> Often require some internship or practical experience in coding and development.</li>
+                            <li><strong>Mid-Level Positions:</strong> Require 2-5 years of relevant work experience in software development.</li>
+                            <li><strong>Senior Positions:</strong> Typically require 5+ years of experience, including project management and leadership skills.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="additional-requirements">
+                        <h2>Additional Requirements</h2>
+                        <ul>
+                            <li><strong>Certifications:</strong> Professional certifications (e.g., CompTIA, Microsoft) can be a plus.</li>
+                            <li><strong>Adaptability:</strong> Ability to keep up with the latest technologies and industry trends.</li>
+                            <li><strong>Attention to Detail:</strong> High level of accuracy in coding and documentation.</li>
+                            <li><strong>Learning Mindset:</strong> Willingness to continue learning and growing in the field.</li>
+                        </ul>
+                    </section>
+                </main>
+                <footer>
+                    <p>&copy; 2024 Requirements for Working in Computer Science</p>
+                </footer>
+    
+            </accordion-group>
+            <accordion-group [isOpen]="isSchoolOpened">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">
+                        School Years
+                    </div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSchoolOpened" style="color: white;">></div>
+                        <div *ngIf="isSchoolOpened" style="color: white;">v</div>
+
+                    </div>
+                </button>
+                <header>
+                    <h1>David Eliashvili's School Years and School Awards</h1>
+                </header>
+                <main>
+                    <section id="school-history">
+                        <h2>School History</h2>
+                        <ul>
+                            <li><strong>Primary School:</strong> Attended ABC Elementary School (2008 - 2014).</li>
+                            <li><strong>Secondary School:</strong> Attended XYZ High School (2014 - 2019).</li>
+                            <li><strong>Graduation:</strong> Graduated with honors in 2019.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="academic-achievements">
+                        <h2>Academic Achievements</h2>
+                        <ul>
+                            <li><strong>Top Grades:</strong> Consistently achieved top grades in mathematics, science, and computer science courses.</li>
+                            <li><strong>Science Fair Winner:</strong> First place in regional science fair for a project on robotics.</li>
+                            <li><strong>Advanced Placement Courses:</strong> Completed AP courses in Computer Science, Calculus, and Physics.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="extracurricular-activities">
+                        <h2>Extracurricular Activities</h2>
+                        <ul>
+                            <li><strong>Coding Club:</strong> Active member of the school's coding club, participating in coding challenges and hackathons.</li>
+                            <li><strong>Robotics Team:</strong> Part of the school's robotics team, representing the school in national competitions.</li>
+                            <li><strong>Math Olympiad:</strong> Competed in state-level math competitions, earning several awards.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="school-awards">
+                        <h2>School Awards</h2>
+                        <ul>
+                            <li><strong>Honor Roll:</strong> Recognized for academic excellence every year of secondary school.</li>
+                            <li><strong>Student of the Year:</strong> Awarded for outstanding contributions to the school community in 2018.</li>
+                            <li><strong>Principal's Award:</strong> Awarded for exceptional performance in computer science and technology in 2019.</li>
+                        </ul>
+                    </section>
+                </main>
+                <footer>
+                    <p>&copy; 2024 David Eliashvili</p>
+                </footer>
+    
+            </accordion-group>
+            <accordion-group [(isOpen)]="isGradeOpened">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"></div>
+                    <div class="btn-link">
+                        Grades In Univesity
+                    </div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isGradeOpened" style="color: white;">></div>
+                        <div *ngIf="isGradeOpened" style="color: white;">v</div>
+
+                    </div>
+                </button>
+                <header>
+                    <h1>David Eliashvili's University Grades in Computer Science</h1>
+                </header>
+                <main>
+                    <section id="first-year">
+                        <h2>First Year</h2>
+                        <ul>
+                            <li><strong>Introduction to Computer Science:</strong> A+</li>
+                            <li><strong>Discrete Mathematics:</strong> A</li>
+                            <li><strong>Programming Fundamentals:</strong> A+</li>
+                            <li><strong>Data Structures:</strong> A</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="second-year">
+                        <h2>Second Year</h2>
+                        <ul>
+                            <li><strong>Algorithms:</strong> A+</li>
+                            <li><strong>Database Systems:</strong> A+</li>
+                            <li><strong>Software Engineering:</strong> A</li>
+                            <li><strong>Web Development:</strong> A+</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="third-year">
+                        <h2>Third Year</h2>
+                        <ul>
+                            <li><strong>Artificial Intelligence:</strong> A+</li>
+                            <li><strong>Machine Learning:</strong> A+</li>
+                            <li><strong>Operating Systems:</strong> A</li>
+                            <li><strong>Computer Networks:</strong> A+</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="fourth-year">
+                        <h2>Fourth Year</h2>
+                        <ul>
+                            <li><strong>Advanced Data Analysis:</strong> A+</li>
+                            <li><strong>Distributed Systems:</strong> A+</li>
+                            <li><strong>Cybersecurity:</strong> A</li>
+                            <li><strong>Capstone Project:</strong> A+</li>
+                        </ul>
+                    </section>
+                </main>
+                <footer>
+                    <p>&copy; 2024 David Eliashvili</p>
+                </footer>
+    
+    
+            </accordion-group>
+        </accordion>
+    </div>
+    </div>    
+    
+
+   

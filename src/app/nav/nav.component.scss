@@ -1,0 +1,30 @@
+.custom-navbar {
+    border-bottom: 2px solid #ccc;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+  
+    .nav {
+      .nav-item {
+        margin: 0 1rem;
+  
+        .nav-link {
+          font-size: 1.1rem;
+          color: #6c757d;
+          padding: 0.5rem 1rem;
+          transition: color 0.3s ease, background-color 0.3s ease;
+  
+          &:hover {
+            color: #343a40;
+            background-color: #e9ecef;
+            border-radius: 5px;
+          }
+  
+          &.active-link {
+            color: #343a40;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  
